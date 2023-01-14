@@ -1,0 +1,112 @@
+@import "config";
+
+@media screen and (min-width:540px) {
+    html{
+        font-size: 100%;
+    }
+    .subContainer{
+        display:flex;
+        width:100%;
+        gap:3rem;
+        height:40rem;
+        padding:1rem;
+        border-radius:0.5rem;
+        background-color:$textColor1;
+    }
+    .main_ui{
+        width:50%;
+    }
+    .main4_desktop,.main5_desktop,.main3_desktop,.main2_desktop,.main_desktop{
+        animation-name: popup;
+        animation-duration:1s;
+        animation-timing-function: ease-in-out;     
+        margin-top:4rem;
+        width:35rem;
+        line-height:1.7rem;     
+    }
+    .main5_desktop{
+        display:flex;
+        flex-direction:column;
+        gap:1rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .sidebar_desktop{
+        display:flex;
+        flex-direction: column;
+        background-size:cover;
+        background-repeat: no-repeat;
+        justify-content: flex-start;
+        width:30%;
+        gap:0.5rem;
+        height:100%;
+        padding:2rem;
+        background-image: url("./images/bg-sidebar-desktop.svg");
+    }
+    .step_1{
+        margin-top:0;
+        gap:1rem;
+    }
+    .step_nickName{
+        font-size:1.2rem;
+    }
+    .input_type_1,.duration,.add_on,.ActiveAdd_on,.bill,.total{
+        width:90%;
+    }
+    .btns_desktop{
+
+        
+        height:5rem;
+        display:flex;
+        background-color: $textColor1;
+        width:100%;
+        align-items: center;
+        justify-content:space-between;
+    }
+    .next_desktop,.back_desktop,.confirm_desktop{
+        border:none; 
+        cursor:pointer;
+        background:$textColor3;
+        color:$textColor1;
+        font-family:ubuntuR;
+        border-radius:0.3rem;
+        font-size:1.4rem;
+        padding:0.9rem;
+        width:12rem;
+    }
+    .back_desktop{
+        background: none;
+        color:$textColor2;
+    }
+    .next_desktop,.confirm_desktop{
+        position:absolute;
+        left:65%;
+    }
+    .confirm_desktop{
+        background:$ActivePlan;
+    }
+    .plans{
+        width:100%;
+        flex-direction: row;
+        gap:1rem;
+        
+    }
+    
+    .plan,.Active_plan{
+        width:29%;
+        flex-direction: column;
+        align-items: flex-start;
+       
+    }
+    .subheading1,.subheading3{
+        font-size:1.2rem;
+    }
+    .plan_details{
+        line-height:1.1rem;
+    }
+    .add_on,.ActiveAdd_on{
+        padding:0.5rem;
+    }
+    
+}

@@ -1,0 +1,52 @@
+$textColor3: hsl(213, 96%, 18%);
+$ActivePlan: hsl(243, 100%, 62%);
+$Pastelblue: hsl(228, 100%, 84%);
+$Active: hsl(206, 94%, 87%);
+$Strawberryred: hsl(354, 84%, 57%);
+$textColor2: hsl(231, 11%, 63%);
+$lightgrey: hsl(229, 24%, 87%);
+$billColor: hsl(217, 100%, 97%);
+$duration: hsl(231, 100%, 99%);
+$textColor1: hsl(0, 0%, 100%);
+@keyframes popup{
+    0%{
+        opacity:0%;
+    }
+    33%{
+        opacity:33%;
+    }
+    66%{
+        opacity:66%;
+    }
+    100%{
+        opacity:100%;
+    }
+}
+*{
+    box-sizing: border-box;
+    margin:0;
+    transition:all linear 0.5s;
+}
+html{
+    font-size:62.5%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    width:100%;
+    height:100vh;
+    background-color:$billColor;
+}
+@font-face {
+    font-family:"ubuntuB";
+    src:local("fonts") , url("./fonts/Ubuntu-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family:"ubuntuM";
+    src:local("fonts") , url("./fonts/Ubuntu-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family:"ubuntuR";
+    src:local("fonts") , url("./fonts/Ubuntu-Regular.ttf") format("truetype");
+}
