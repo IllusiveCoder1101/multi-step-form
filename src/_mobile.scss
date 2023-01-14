@@ -53,6 +53,7 @@
     background:none;
     color:$textColor1;
     font-size: 1.2rem;
+    font-weight:normal;
     padding:1.2rem; 
     border-radius: 100%;
     border:0.1rem solid $textColor1;
@@ -86,6 +87,15 @@
     font-family: ubuntuM;
     font-size:1.5rem;
     margin-top:1rem;
+}
+.titles{
+    width:90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.display_error{
+    color:$Error
 }
 .input_type_1{
     width:90%;

@@ -7,6 +7,7 @@ function AppProvider({children}) {
     const [checkList,setCheckList]=React.useState({"first":false,"second":false,"third":false})
     const [size,setSize]=React.useState(window.innerWidth)
     const [yearly,setYearly]=React.useState(false)
+    const [tempinfo,setTempInfo]=React.useState({"name":"","email":"","phone":""})
     const [info,setInfo]=React.useState({"name":"","email":"","phone":""})
     const Plans=["Arcade","Advanced","Pro"]
     const resize =()=>{
@@ -19,6 +20,7 @@ function AppProvider({children}) {
         }
     })
     const validateDetailsName=(nm)=>{
+        setTempInfo({...tempinfo,"name":nm})
         if(nm.length!==0)
             setInfo({...info,"name":nm})
         
@@ -26,11 +28,13 @@ function AppProvider({children}) {
        
     }
     const validateDetailsEmail=(em)=>{
+        setTempInfo({...tempinfo,"email":em})
         if(em.length!==0 && /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(em))
             setInfo({...info,"email":em})
         
     }
     const validateDetailsPhone=(pn)=>{
+        setTempInfo({...tempinfo,"phone":pn})
         if(pn.length===10  && /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im.test(pn) )
             setInfo({...info,"phone":pn})
         
@@ -57,7 +61,7 @@ function AppProvider({children}) {
     return (
     <AppContext.Provider value={{page,Next,Previous,setPage,plan,setPlan,Plans,ActiveAddOn,
     checkList,UpdateCheckList,size,yearly,setYearly,info,validateDetailsEmail,validateDetailsName,
-    validateDetailsPhone}}>
+    validateDetailsPhone,tempinfo}}>
         {children}
     </AppContext.Provider>
   )

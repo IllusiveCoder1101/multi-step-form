@@ -4,7 +4,7 @@ function Sidebar_Style2(info) {
   const {page}=useGlobalContext()
   return (
     <section className="step_1">
-        <div className={(page==info.number)?"Active":'step_no'}>{info.number}</div>
+        <h1 className={(page==info.number)?"Active":'step_no'}>{info.number}</h1>
     </section>
   )
 }

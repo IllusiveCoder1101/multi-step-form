@@ -13,16 +13,17 @@
         width:30rem;
     }
     .sidebar_desktop{
-       width:28%;
+       width:30%;
 
     }
     .heading1{
         font-size:2rem;
     }
+    
     .subheading1{
         margin-top:0.5rem;
     }
-    .subheading1,.input_type_1,.subheading3{
+    .subheading1,.input_type_1,.subheading3,.display_error{
         font-size:0.8rem;
     }
     .subheading3{
@@ -34,7 +35,7 @@
     }
     .input_type_1{
         
-        padding:0.8rem;
+        padding:0.6rem;
     }
     .step_name{
         font-size:0.8rem;
@@ -46,11 +47,12 @@
     .step_nickName{
         font-size:1rem;
     }
-    .input_type_1,.duration,.add_on,.ActiveAdd_on,.bill,.total{
+    .titles,.input_type_1,.duration,.add_on,.ActiveAdd_on,.bill,.total{
         width:85%;
     }
     .next_desktop,.back_desktop,.confirm_desktop{
         font-size:1rem;
+        padding:0.5rem;
         width:7rem;
     }
     .next_desktop{

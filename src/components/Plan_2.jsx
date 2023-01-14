@@ -6,7 +6,7 @@ import FetchData from "./data"
 function Plan_2() {
   const {size,yearly,setYearly}=useGlobalContext()
   return (
-    <main className={(size<540)?'main2_mobile':"main2_desktop"}>
+    <div className={(size<540)?'main2_mobile':"main2_desktop"}>
       <h1 className="heading1">Select your plan</h1>
       <p className="subheading1">You have the option of monthly or yearly billing.</p>
       <section className="plans">
@@ -26,7 +26,7 @@ function Plan_2() {
 
         <h3 className='title_heading_1'>Yearly</h3>
       </section>
-    </main>
+    </div>
   )
 }
 
