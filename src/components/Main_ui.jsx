@@ -11,10 +11,10 @@ function Main_ui() {
     return (
         <div className='main_ui'>
             {(page==1)?<Info_1/>:(page==2)?<Plan_2/>:(page==3)?<Add_3/>:(page==4)?<Confirmation_4/>:<Thanks_5/>}
-            {(page<=4)?<section className={(size<540)?"btns_mobile":"btns_desktop"}>
+            {(page<=4)?<div className={(size<540)?"btns_mobile":"btns_desktop"}>
             {(page>1)?<button className={(size<540)?"back_mobile":"back_desktop"} onClick={()=>Previous()}>Go Back</button>:<></>}
             <button disabled={((page==1 && info.email && info.phone && info.name) || (page==2 && plan) || (page==3) || (page==4))?false:true} className={(size<540)?(page==4)?"confirm_mobile":"next_mobile":(page==4)?"confirm_desktop":"next_desktop"} onClick={()=>Next()}>{(page==4)?"Confirm":"Next Step"}</button>
-            </section>:<></>}
+            </div>:<></>}
         </div>
     )
 }

@@ -5,14 +5,14 @@ import Sidebar_1 from './components/Sidebar_1'
 function App() {
   
   return (
-    <div role={"main"} className="container">
-      <main className="subContainer">
+    <main role={"main"} className="container">
+      <section className="subContainer">
         <Sidebar_1/>
         <Main_ui/>
         
-      </main>
+      </section>
       
-    </div>
+    </main>
   )
 }
 
